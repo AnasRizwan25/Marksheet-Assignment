@@ -27,8 +27,7 @@ function grading(percent){
   if(percent > 84 && percent <=100) return 'A';
   if(percent > 69 ) return 'B'
   if(percent > 59) return 'C';
-  if(percent > 49) return 'D';
-  if(percent > 39) return 'D';
+  if(percent > 45) return 'D';
 return 'F';
 }
 let grade = grading(percent);
