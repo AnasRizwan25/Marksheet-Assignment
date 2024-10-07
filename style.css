@@ -1,0 +1,142 @@
+body{
+  font-family: poppins;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/pic4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: 900;
+}
+*{
+  box-sizing: border-box;
+}
+table{
+  border: 5px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  height: 0px;
+}
+.a0,.a1,.a3,.a4{
+  display: none;
+}
+th{
+  align-items: start;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: 3px solid white;
+}
+.th1{
+  text-align: left;
+}
+td{
+  border: none;
+  padding: 5px;
+}
+.a2{
+  font-size: 20px;
+  text-align: center;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:0px 10px ;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: rgb(255, 251, 0);
+}
+@media screen and (max-width:720px) {
+  .a2{
+    font-size: 15px;
+  }
+  td{
+    font-size: 10px;
+  }
+  th{
+  border: 2px solid white;
+  font-size: 12px;
+  }
+  table{
+  border: 4px solid white;
+  }
+}
+@media screen and (max-width:540px) {
+  .a2{
+    font-size: 7px;
+  }
+  td{
+    font-size: 7px;
+  }
+  th{
+  border: 2px solid white;
+  font-size: 7px;
+  padding: 2px;
+  }
+  table{
+  border: 3px solid white;
+  padding: 5px;
+  }
+}
+@media screen and (min-width:1800px) {
+  
+table{
+  border: 8px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  height: 0px;
+}
+.a0,.a1,.a3,.a4{
+  display: none;
+}
+th{
+  align-items: start;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 35px;
+  border: 3px solid white;
+}
+.th1{
+  text-align: left;
+}
+td{
+  border: none;
+  padding: 5px;
+  font-size: 30px;
+}
+.a2{
+  font-size: 30px;
+  text-align: center;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:0px 10px ;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 60px;
+  color: rgb(255, 251, 0);
+}
+}
+.marks{
+  text-align: center;
+}
