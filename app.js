@@ -11,50 +11,33 @@ function percentage(marks){
   let percent = (obtainedMarks * 100) / totalMarks;
 return percent;
 }
-let a = 4;
-console.log(typeof(a))
 for(let i = 0;i < 5;i++){
-  let input = +prompt(`Enter The Marks Of ${subject[i]}`);
-  if(input < 101){
-    marks.push(input);
-  } else{
-    alert('Number between 1 to 101');
+  let input;
+  console.log(input);
+  while(isNaN(input) || input < 0 || input > 100){//This isNaN check if the number is not Number
+    input = prompt(`Enter the marks for ${subject[i]} (0-100)`);
+    input = Number(input); 
   }
+  marks.push(input);
 }
 
 let percent = percentage(marks);
 
 function grading(percent){
-  let grade = '';
-  if(percent > 84 && percent <=100){
-    grade = 'A';
-  } else if(percent > 69 ){
-    grade = 'B';
-  } else if(percent > 59){
-    grade = 'C';
-  }else if(percent > 49){
-    grade = 'D';
-  }else if(percent > 39){
-    grade = 'D';
-  }else{
-    grade = 'F';
-  }
-return grade;
+  if(percent > 84 && percent <=100) return 'A';
+  if(percent > 69 ) return 'B'
+  if(percent > 59) return 'C';
+  if(percent > 49) return 'D';
+  if(percent > 39) return 'D';
+return 'F';
 }
 let grade = grading(percent);
 
 function scholarS(grade){
-  let sch = '';
-  if(grade == 'A'){
-    sch = '75% Scholarship';
-  }else if(grade == 'B'){
-    sch = '55% Scholarship';
-  }else if(grade == 'C'){
-    sch = '30% Scholarship';
-  }else{
-    sch = 'No Scholarship';
-  }
-return sch;
+  if(grade == 'A') return '75% Scholarship';
+  if(grade == 'B') return '55% Scholarship';
+  if(grade == 'C') return '30% Scholarship';
+  return 'No Scholarship';
 }
 let scholarship = scholarS(grade);
 console.log(percent,grade,scholarship);
