@@ -80,19 +80,22 @@ td{
 }
 @media screen and (max-width:580px) {
   .a2{
-    font-size: 4.5px;
+    font-size: 5.5px;
   }
   td{
-    font-size: 4.2px;
+    font-size: 5.5px;
   }
   th{
   border: 1px solid white;
-  font-size: 4.5px;
-  padding: 1px;
+  font-size: 6px;
+  padding: 2px;
   }
   table{
   border: 2px solid white;
-  padding: 3px;
+  padding: 4px;
+  }
+  .name{
+    font-size: 25px;
   }
 }
 @media screen and (min-width:1800px) {
