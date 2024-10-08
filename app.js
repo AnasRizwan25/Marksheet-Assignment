@@ -48,7 +48,7 @@ let grade = grading(percent);
 
 function scholarS(grade){
   if(grade == 'A') return '75% Scholarship';
-  if(grade == 'B') return '55% Scholarship';
+  if(grade == 'B') return '35% Scholarship';
   if(grade == 'C') return '15% Scholarship';
   return 'No Scholarship';
 }
